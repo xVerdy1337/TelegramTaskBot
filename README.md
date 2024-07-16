@@ -20,7 +20,7 @@
 
 1. Клонируйте репозиторий:
    ```
-   git clone https://github.com/ваш-юзернейм/telegram-task-bot.git
+   git clone https://github.com/xVerdy1337/TelegramTaskBot.git
    cd telegram-task-bot
    ```
 
