@@ -21,7 +21,7 @@
 1. Клонируйте репозиторий:
    ```
    git clone https://github.com/xVerdy1337/TelegramTaskBot.git
-   cd telegram-task-bot
+   cd TelegramTaskBot
    ```
 
 2. Установите зависимости:
