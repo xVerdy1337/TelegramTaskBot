@@ -1,16 +1,23 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
-main_keyboard = ReplyKeyboardMarkup(
-    keyboard=[
-        [
-            KeyboardButton(text='🔸Создать задачу'),
-            KeyboardButton(text='🔸Список задач'),
-        ],
-        [
-            KeyboardButton(text='🔸Выполнить задачу'),
-            KeyboardButton(text='🔸Удалить задачу'),
-        ]
-    ],
-    resize_keyboard=True
-)
+def get_main_keyboard():
+    builder = ReplyKeyboardBuilder()
 
+    builder.button(
+        text='🔸Создать задачу'
+    )
+
+    builder.button(
+        text='🔸Список задач'
+    )
+
+    builder.button(
+        text='🔸Выполнить задачу'
+    )
+
+    builder.button(
+        text='🔸Удалить задачу'
+    )
+
+    builder.adjust(2)
+    return builder.as_markup(resize_keyboard=True)
