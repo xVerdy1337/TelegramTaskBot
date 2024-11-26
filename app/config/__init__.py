@@ -1,1 +1,1 @@
-from .config import BOT_TOKEN
+from .config import BOT_TOKEN, MONGO_URI

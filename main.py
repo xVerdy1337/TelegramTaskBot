@@ -4,6 +4,7 @@ from aiogram.filters import Command, StateFilter
 from aiogram.fsm.context import FSMContext
 from app.modules import *
 from app.config import BOT_TOKEN
+from app.database import
 
 
 bot = Bot(BOT_TOKEN)
