@@ -1,15 +1,12 @@
-import os
 import asyncio
-
 from aiogram import Bot, Dispatcher, F, types
 from aiogram.filters import Command, StateFilter
 from aiogram.fsm.context import FSMContext
-from dotenv import load_dotenv
-from modules import *
+from app.modules import *
+from app.config import BOT_TOKEN
 
 
-load_dotenv()
-bot = Bot(token=os.getenv("BOT_TOKEN"))
+bot = Bot(BOT_TOKEN)
 dp = Dispatcher()
 
 
